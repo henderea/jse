@@ -7,6 +7,6 @@
             "node10-linux-x64"
         ],
         "scripts": "../lib/**/*.js",
-        "resources": "../resources/**/*.*"
+        "assets": "../resources/**/*.*"
     }
 }
