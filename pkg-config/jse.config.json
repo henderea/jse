@@ -1,0 +1,12 @@
+{
+    "name": "jse",
+    "bin": "../bin/jse.js",
+    "pkg": {
+        "targets": [
+            "node10-macos-x64",
+            "node10-linux-x64"
+        ],
+        "scripts": "../lib/**/*.js",
+        "resources": "../resources/**/*.*"
+    }
+}
