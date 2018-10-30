@@ -9,7 +9,8 @@
   "scripts": {
     "pkg:clean": "rm -rf pkg",
     "pkg:jse": "pkg pkg-config/jse.config.json --out-path pkg",
-    "pkg": "yarn pkg:clean && yarn pkg:jse"
+    "pkg:copy-deps": "cp node_modules/keytar/build/Release/keytar.node pkg/",
+    "pkg": "yarn pkg:clean && yarn pkg:jse && yarn pkg:copy-deps"
   },
   "bin": {
     "jse": "./bin/jse.js"
