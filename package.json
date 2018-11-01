@@ -1,6 +1,6 @@
 {
   "name": "@henderea/jse",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "JavaScript Executor",
   "main": "index.js",
   "repository": "git@github.com:henderea/jse.git",
