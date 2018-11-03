@@ -16,6 +16,7 @@
     "jse": "./bin/jse.js"
   },
   "dependencies": {
+    "@henderea/commander": "^2.20.0",
     "chalk": "^2.4.1",
     "core-js": "^2.5.7",
     "inquirer": "^6.2.0",
