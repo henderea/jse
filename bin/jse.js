@@ -9,6 +9,5 @@ const argv = yargs
     .command(require('../lib/commands/test_auth'))
     .command(require('../lib/commands/unauth'))
     .command(require('../lib/commands/var'))
-    .help('h')
-    .alias('h', 'help')
+    .help('help')
     .argv;
