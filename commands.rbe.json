@@ -1,0 +1,16 @@
+{
+  "npm-publish_sl": {
+    "command": [
+      "gaa_nsl",
+      "gcud_nsl",
+      "npmvp_nsl",
+      "npmynccb_nsl",
+      "npmpb_nsl",
+      "gpush_nsl"
+    ],
+    "sudo": null,
+    "args": null,
+    "vars": null,
+    "interactive": null
+  }
+}
