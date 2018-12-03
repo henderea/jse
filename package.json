@@ -10,21 +10,24 @@
     "pkg:clean": "rm -rf pkg",
     "pkg:jse": "pkg pkg-config/jse.config.json --out-path pkg",
     "pkg:copy-deps": "cp node_modules/keytar/build/Release/keytar.node pkg/",
-    "pkg": "yarn pkg:clean && yarn pkg:jse && yarn pkg:copy-deps"
+    "pkg": "yarn pkg:clean && yarn pkg:jse && yarn pkg:copy-deps",
+    "ncc:run": "ncc run bin/jse.js -S -e keytar",
+    "ncc:build": "ncc build bin/jse.js -S -e keytar -o dist && rm -rf dist/*.hbs && mv dist/index.js dist/jse.js && chmod +x dist/jse.js"
   },
   "bin": {
-    "jse": "./bin/jse.js"
+    "jse": "./dist/jse.js"
   },
   "dependencies": {
+    "keytar": "^4.3.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.2.0",
     "chalk": "^2.4.1",
     "core-js": "^2.5.7",
     "inquirer": "^6.2.0",
-    "keytar": "^4.3.0",
     "lodash": "^4.17.11",
+    "pkg": "^4.3.4",
     "shell-escape-tag": "^1.2.2",
     "yargs": "^12.0.2"
-  },
-  "devDependencies": {
-    "pkg": "^4.3.4"
   }
 }

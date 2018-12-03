@@ -27,6 +27,11 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.2.tgz#54c5a964462be3d4d78af631363c18d6fa91ac26"
   integrity sha512-yprFYuno9FtNsSHVlSWd+nRlmGoAbqbeCwOryP6sC/zoCjhpArcRMYp19EvpSUSizJAlsXEwJv+wcWS9XaXdMw==
 
+"@zeit/ncc@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@zeit/ncc/-/ncc-0.2.0.tgz#682889380fa98c9d736d08e98dda6e129495920f"
+  integrity sha512-82ffMF5FkrPyJ1Ofho6kcr3UJ5+EWo5jDnLGdMAZ0CkNPTzoVOXhS4qD1KflspsKaZOCrzIZryF7PpklHoBZ7Q==
+
 ajv@^5.1.0:
   version "5.5.2"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-5.5.2.tgz#73b5eeca3fab653e3d3f9422b341ad42205dc965"
