@@ -1,3 +1,7 @@
 pkg
 pkg-config
 .nvmrc
+lib
+bin
+*.rbe.json
+*.jse.json
