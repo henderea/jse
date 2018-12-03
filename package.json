@@ -12,7 +12,7 @@
     "pkg:copy-deps": "cp node_modules/keytar/build/Release/keytar.node pkg/",
     "pkg": "yarn pkg:clean && yarn pkg:jse && yarn pkg:copy-deps",
     "ncc:run": "ncc run bin/jse.js -S -e keytar",
-    "ncc:build": "ncc build bin/jse.js -S -e keytar -o dist && rm -rf dist/*.hbs && mv dist/index.js dist/jse.js && echo '#!/usr/bin/env node' | cat - dist/jse.js | tee dist/jse.js >/dev/null 2>/dev/null && chmod +x dist/jse.js"
+    "ncc:build": "ncc build bin/jse.js -S -e keytar -o dist && rm -rf dist/*.hbs && mv dist/index.js dist/jse.js && echo '#!/usr/bin/env node' | cat - dist/jse.js >dist/jse.js.temp 2>/dev/null && mv dist/jse.js.temp dist/jse.js && chmod +x dist/jse.js"
   },
   "bin": {
     "jse": "./dist/jse.js"
