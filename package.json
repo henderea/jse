@@ -2,7 +2,7 @@
   "name": "@henderea/jse",
   "version": "0.2.11",
   "description": "JavaScript Executor",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": "git@github.com:henderea/jse.git",
   "author": "Eric Henderson <henderea@gmail.com>",
   "license": "MIT",
@@ -12,19 +12,17 @@
     "pkg:copy-deps": "cp node_modules/keytar/build/Release/keytar.node pkg/",
     "pkg": "yarn pkg:clean && yarn pkg:jse && yarn pkg:copy-deps",
     "ncc:run": "ncc run bin/jse.js -S -e keytar",
-    "ncc:build": "ncc build bin/jse.js -S -e keytar -o dist && rm -rf dist/*.hbs && mv dist/index.js dist/jse.js && echo '#!/usr/bin/env node' | cat - dist/jse.js >dist/jse.js.temp 2>/dev/null && mv dist/jse.js.temp dist/jse.js && chmod +x dist/jse.js"
+    "ncc:build": "rm -rf dist && ncc build src/jse.js -S -q -o dist && rm -rf dist/*.hbs"
   },
   "bin": {
-    "jse": "./dist/jse.js"
-  },
-  "dependencies": {
-    "keytar": "^4.3.0"
+    "jse": "./bin/jse.js"
   },
   "devDependencies": {
     "@zeit/ncc": "^0.3.0",
     "chalk": "^2.4.1",
     "core-js": "^2.5.7",
     "inquirer": "^6.2.1",
+    "keytar": "^4.3.0",
     "lodash": "^4.17.11",
     "pkg": "^4.3.5",
     "shell-escape-tag": "^1.2.2",

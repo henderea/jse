@@ -2,6 +2,6 @@ pkg
 pkg-config
 .nvmrc
 lib
-bin
+src
 *.rbe.json
 *.jse.json
