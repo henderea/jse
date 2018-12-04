@@ -12,17 +12,19 @@
     "pkg:copy-deps": "cp node_modules/keytar/build/Release/keytar.node pkg/",
     "pkg": "yarn pkg:clean && yarn pkg:jse && yarn pkg:copy-deps",
     "ncc:run": "ncc run bin/jse.js -S -e keytar",
-    "ncc:build": "rm -rf dist && ncc build src/jse.js -S -q -o dist && rm -rf dist/*.hbs"
+    "ncc:build": "rm -rf dist && ncc build src/jse.js -S -q -e keytar -o dist && rm -rf dist/*.hbs"
   },
   "bin": {
     "jse": "./bin/jse.js"
+  },
+  "dependencies": {
+    "keytar": "^4.3.0"
   },
   "devDependencies": {
     "@zeit/ncc": "^0.3.0",
     "chalk": "^2.4.1",
     "core-js": "^2.5.7",
     "inquirer": "^6.2.1",
-    "keytar": "^4.3.0",
     "lodash": "^4.17.11",
     "pkg": "^4.3.5",
     "shell-escape-tag": "^1.2.2",
