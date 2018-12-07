@@ -11,8 +11,13 @@
     "pkg:jse": "pkg pkg-config/jse.config.json --out-path pkg",
     "pkg:copy-deps": "cp node_modules/keytar/build/Release/keytar.node pkg/",
     "pkg": "yarn pkg:clean && yarn pkg:jse && yarn pkg:copy-deps",
-    "ncc:run": "ncc run bin/jse.js -S -e keytar",
-    "ncc:build": "rm -rf dist && ncc build src/jse.js -S -q -e keytar -o dist && rm -rf dist/*.hbs"
+    "ncc:build": "yarn ncc:build:release",
+    "ncc:clean": "rm -rf dist",
+    "ncc:post-clean": "rm -rf dist/*.hbs && rm -rf dist/locales",
+    "ncc:build:release:build": "ncc build src/jse.js -S -q -e keytar -o dist",
+    "ncc:build:debug:build": "ncc build src/jse.js -S -M -q -e keytar -o dist",
+    "ncc:build:release": "yarn ncc:clean && yarn ncc:build:release:build && yarn ncc:post-clean",
+    "ncc:build:debug": "yarn ncc:clean && yarn ncc:build:debug:build && yarn ncc:post-clean"
   },
   "bin": {
     "jse": "./bin/jse.js"
@@ -21,7 +26,7 @@
     "keytar": "^4.3.0"
   },
   "devDependencies": {
-    "@zeit/ncc": "^0.3.0",
+    "@zeit/ncc": "^0.5.0",
     "chalk": "^2.4.1",
     "core-js": "^2.6.0",
     "inquirer": "^6.2.1",
