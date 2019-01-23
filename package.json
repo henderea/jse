@@ -14,8 +14,8 @@
     "ncc:build": "yarn ncc:build:release",
     "ncc:clean": "rm -rf dist",
     "ncc:post-clean": "rm -rf dist/*.hbs && rm -rf dist/locales",
-    "ncc:build:release:build": "ncc build src/jse.js -S -q -e keytar -o dist",
-    "ncc:build:debug:build": "ncc build src/jse.js -S -M -q -e keytar -o dist",
+    "ncc:build:release:build": "ncc build src/jse.js -m -q -e keytar -o dist",
+    "ncc:build:debug:build": "ncc build src/jse.js -q -e keytar -o dist",
     "ncc:build:release": "yarn ncc:clean && yarn ncc:build:release:build && yarn ncc:post-clean",
     "ncc:build:debug": "yarn ncc:clean && yarn ncc:build:debug:build && yarn ncc:post-clean"
   },
@@ -26,12 +26,12 @@
     "keytar": "^4.3.0"
   },
   "devDependencies": {
-    "@zeit/ncc": "^0.8.1",
-    "chalk": "^2.4.1",
-    "core-js": "^2.6.1",
+    "@zeit/ncc": "^0.11.0",
+    "chalk": "^2.4.2",
+    "core-js": "^2.6.3",
     "inquirer": "^6.2.1",
     "lodash": "^4.17.11",
-    "pkg": "^4.3.5",
+    "pkg": "^4.3.7",
     "shell-escape-tag": "^1.2.2",
     "yargs": "^12.0.5"
   }
