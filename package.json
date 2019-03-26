@@ -17,7 +17,8 @@
     "ncc:build:release:build": "ncc build src/jse.js -m -q -e keytar -o dist",
     "ncc:build:debug:build": "ncc build src/jse.js -q -e keytar -o dist",
     "ncc:build:release": "yarn ncc:clean && yarn ncc:build:release:build && yarn ncc:post-clean",
-    "ncc:build:debug": "yarn ncc:clean && yarn ncc:build:debug:build && yarn ncc:post-clean"
+    "ncc:build:debug": "yarn ncc:clean && yarn ncc:build:debug:build && yarn ncc:post-clean",
+    "prepublishOnly": "yarn ncc:build"
   },
   "bin": {
     "jse": "./bin/jse.js"
