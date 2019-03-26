@@ -28,12 +28,12 @@
   },
   "devDependencies": {
     "@zeit/ncc": "^0.17.0",
+    "any-shell-escape": "^0.1.1",
     "chalk": "^2.4.2",
     "core-js": "^3.0.0",
     "inquirer": "^6.2.2",
     "lodash": "^4.17.11",
     "pkg": "^4.3.7",
-    "shell-escape-tag": "^1.2.2",
     "yargs": "^13.2.2"
   }
 }
