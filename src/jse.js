@@ -1,6 +1,9 @@
 const yargs = require('yargs');
 const path = require('path');
 const argv = yargs
+    .parserConfiguration({
+        'unknown-options-as-args': true
+    })
     .usage('Usage: $0 command [args]')
     .wrap(120)
     .command(require('../lib/commands/about'))
