@@ -30,7 +30,7 @@
     "@zeit/ncc": "^0.20.5",
     "any-shell-escape": "^0.1.1",
     "chalk": "^2.4.2",
-    "core-js": "^3.2.1",
+    "core-js": "^3.3.2",
     "inquirer": "^7.0.0",
     "lodash": "^4.17.15",
     "natural-orderby": "^2.0.3",
