@@ -7,10 +7,6 @@
   "author": "Eric Henderson <henderea@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "pkg:clean": "rm -rf pkg",
-    "pkg:jse": "pkg pkg-config/jse.config.json --out-path pkg",
-    "pkg:copy-deps": "cp node_modules/keytar/build/Release/keytar.node pkg/",
-    "pkg": "yarn pkg:clean && yarn pkg:jse && yarn pkg:copy-deps",
     "ncc:build": "yarn ncc:build:release",
     "ncc:clean": "rm -rf dist",
     "ncc:post-clean": "rm -rf dist/*.hbs && rm -rf dist/locales",
@@ -34,7 +30,6 @@
     "inquirer": "^7.0.0",
     "lodash": "^4.17.15",
     "natural-orderby": "^2.0.3",
-    "pkg": "^4.4.0",
     "yargs": "^14.2.0"
   }
 }

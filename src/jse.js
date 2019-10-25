@@ -1,6 +1,4 @@
-const yargs = require('yargs');
-const path = require('path');
-const argv = yargs
+require('yargs')
     .parserConfiguration({
         'unknown-options-as-args': true
     })
