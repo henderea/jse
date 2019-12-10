@@ -20,16 +20,16 @@
     "jse": "./bin/jse.js"
   },
   "dependencies": {
-    "keytar": "^5.0.0-beta.3"
+    "keytar": "^5.0.0"
   },
   "devDependencies": {
     "@zeit/ncc": "^0.20.5",
     "any-shell-escape": "^0.1.1",
-    "chalk": "^2.4.2",
-    "core-js": "^3.3.4",
+    "chalk": "^3.0.0",
+    "core-js": "^3.4.8",
     "inquirer": "^7.0.0",
     "lodash": "^4.17.15",
     "natural-orderby": "^2.0.3",
-    "yargs": "^14.2.0"
+    "yargs": "^15.0.2"
   }
 }
