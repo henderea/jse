@@ -20,10 +20,10 @@
     "jse": "./bin/jse.js"
   },
   "dependencies": {
-    "keytar": "^5.1.0"
+    "keytar": "^5.2.0"
   },
   "devDependencies": {
-    "@zeit/ncc": "^0.21.0",
+    "@zeit/ncc": "^0.21.1",
     "any-shell-escape": "^0.1.1",
     "chalk": "^3.0.0",
     "core-js": "^3.6.4",
