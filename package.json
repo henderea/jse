@@ -20,7 +20,7 @@
     "jse": "./bin/jse.js"
   },
   "dependencies": {
-    "keytar": "^5.2.0"
+    "keytar": "^5.4.0"
   },
   "devDependencies": {
     "@zeit/ncc": "^0.21.1",

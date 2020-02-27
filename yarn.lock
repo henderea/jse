@@ -356,10 +356,10 @@ isarray@~1.0.0:
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
   integrity sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
 
-keytar@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/keytar/-/keytar-5.2.0.tgz#7543190be98e2a751466096ce3ca1b1a4b8f39fe"
-  integrity sha512-vsIX6n2BgTwzbKOSPIiJ8YduwHlPEE/G5dkmZWXaQK9qiGZMQyhxlFA4O6vrvM5fsXTMgUOrODYAqgpfNSRLDw==
+keytar@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/keytar/-/keytar-5.4.0.tgz#71d8209e7dd2fe99008c243791350a6bd6ceab67"
+  integrity sha512-Ta0RtUmkq7un177SPgXKQ7FGfGDV4xvsV0cGNiWVEzash5U0wyOsXpwfrK2+Oq+hHvsvsbzIZUUuJPimm3avFw==
   dependencies:
     nan "2.14.0"
     prebuild-install "5.3.3"
@@ -583,9 +583,9 @@ restore-cursor@^3.1.0:
     signal-exit "^3.0.2"
 
 run-async@^2.2.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/run-async/-/run-async-2.3.0.tgz#0371ab4ae0bdd720d4166d7dfda64ff7a445a6c0"
-  integrity sha1-A3GrSuC91yDUFm19/aZP96RFpsA=
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/run-async/-/run-async-2.4.0.tgz#e59054a5b86876cfae07f431d18cbaddc594f1e8"
+  integrity sha512-xJTbh/d7Lm7SBhc1tNvTpeCHaEzoyxPrqNlvSdMfBTYwaY++UJFyXUOxAtsRUXjlqOfj8luNaR9vjCh4KeV+pg==
   dependencies:
     is-promise "^2.1.0"
 
@@ -761,9 +761,9 @@ tmp@^0.0.33:
     os-tmpdir "~1.0.2"
 
 tslib@^1.9.0:
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
-  integrity sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.11.0.tgz#f1f3528301621a53220d58373ae510ff747a66bc"
+  integrity sha512-BmndXUtiTn/VDDrJzQE7Mm22Ix3PxgLltW9bSNLoeCY31gnG2OPx0QqJnuc9oMIKioYrz487i6K9o4Pdn0j+Kg==
 
 tunnel-agent@^0.6.0:
   version "0.6.0"
