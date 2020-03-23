@@ -27,9 +27,9 @@
     "any-shell-escape": "^0.1.1",
     "chalk": "^3.0.0",
     "core-js": "^3.6.4",
-    "inquirer": "^7.0.4",
+    "inquirer": "^7.1.0",
     "lodash": "^4.17.15",
     "natural-orderby": "^2.0.3",
-    "yargs": "^15.1.0"
+    "yargs": "^15.3.1"
   }
 }
