@@ -23,13 +23,13 @@
     "keytar": "^6.0.1"
   },
   "devDependencies": {
-    "@zeit/ncc": "^0.22.3",
+    "@vercel/ncc": "^0.24.1",
     "any-shell-escape": "^0.1.1",
-    "chalk": "^4.0.0",
+    "chalk": "^4.1.0",
     "core-js": "^3.6.5",
-    "inquirer": "^7.1.0",
-    "lodash": "^4.17.15",
+    "inquirer": "^7.3.3",
+    "lodash": "^4.17.20",
     "natural-orderby": "^2.0.3",
-    "yargs": "^15.3.1"
+    "yargs": "^16.0.3"
   }
 }
