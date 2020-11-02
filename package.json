@@ -20,7 +20,7 @@
     "jse": "./bin/jse.js"
   },
   "dependencies": {
-    "keytar": "^6.0.1"
+    "keytar": "^7.0.0"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.24.1",
@@ -30,6 +30,6 @@
     "inquirer": "^7.3.3",
     "lodash": "^4.17.20",
     "natural-orderby": "^2.0.3",
-    "yargs": "^16.0.3"
+    "yargs": "^16.1.0"
   }
 }
