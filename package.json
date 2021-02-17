@@ -20,7 +20,7 @@
     "jse": "bin/jse.js"
   },
   "dependencies": {
-    "keytar": "^7.3.0"
+    "keytar": "^7.4.0"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.27.0",
