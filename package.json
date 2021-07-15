@@ -2,19 +2,23 @@
   "name": "@henderea/jse",
   "version": "0.4.0",
   "description": "JavaScript Executor",
-  "main": "dist/index.js",
+  "main": "dist/api/index.js",
   "repository": "git@github.com:henderea/jse.git",
   "author": "Eric Henderson <henderea@gmail.com>",
   "license": "MIT",
   "scripts": {
     "ncc:build": "yarn ncc:build:release",
     "ncc:clean": "rm -rf dist",
-    "ncc:post-clean": "rm -rf dist/*.hbs && rm -rf dist/locales",
-    "ncc:build:release:build": "ncc build src/jse.js -m -q -e keytar -o dist",
-    "ncc:build:debug:build": "ncc build src/jse.js -q -e keytar -o dist",
-    "ncc:build:release": "yarn ncc:clean && yarn ncc:build:release:build && yarn ncc:post-clean",
-    "ncc:build:debug": "yarn ncc:clean && yarn ncc:build:debug:build && yarn ncc:post-clean",
-    "prepublishOnly": "yarn ncc:build"
+    "ncc:post-clean": "rm -rf dist/**/*.hbs && rm -rf dist/**/locales",
+    "ncc:build:release:build:cli": "ncc build src/jse.js -m -q -e keytar -o dist/cli",
+    "ncc:build:debug:build:cli": "ncc build src/jse.js -q -e keytar -o dist/cli",
+    "ncc:build:release:build:api": "ncc build src/api.js -m -q -e keytar -o dist/api",
+    "ncc:build:debug:build:api": "ncc build src/api.js -q -e keytar -o dist/api",
+    "ncc:build:release": "yarn ncc:clean && yarn ncc:build:release:build:cli && yarn ncc:build:release:build:api && yarn ncc:post-clean",
+    "ncc:build:debug": "yarn ncc:clean && yarn ncc:build:debug:build:cli && yarn ncc:build:debug:build:api && yarn ncc:post-clean",
+    "prepublishOnly": "yarn ncc:build",
+    "lint": "eslint bin src lib",
+    "lint:fix": "eslint --fix bin src lib"
   },
   "bin": {
     "jse": "bin/jse.js"
@@ -25,11 +29,19 @@
   "devDependencies": {
     "@vercel/ncc": "^0.27.0",
     "any-shell-escape": "^0.1.1",
+    "babel-eslint": "^10.1.0",
     "chalk": "^4.1.0",
     "core-js": "^3.9.1",
+    "eslint": "^7.30.0",
+    "eslint-config-henderea": "1.0.0",
+    "eslint-plugin-import": "^2.23.4",
     "inquirer": "^8.0.0",
     "lodash": "^4.17.21",
     "natural-orderby": "^2.0.3",
     "yargs": "^16.2.0"
+  },
+  "eslintConfig": {
+    "extends": "henderea",
+    "ignorePatterns": "**/*.ts"
   }
 }
