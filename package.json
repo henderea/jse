@@ -3,6 +3,7 @@
   "version": "0.5.1",
   "description": "JavaScript Executor",
   "main": "dist/api/index.js",
+  "types": "types.d.ts",
   "repository": "git@github.com:henderea/jse.git",
   "author": "Eric Henderson <henderea@gmail.com>",
   "license": "MIT",
