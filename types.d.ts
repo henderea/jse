@@ -36,10 +36,6 @@ export declare interface Shell {
   verbatim(...params: string[]): Escaped;
 }
 
-export declare const shell: Shell;
-export declare const vars: VarApi;
-export declare const version: string;
-
 export declare class State {
   get wd(): string;
   get wdOverride(): string | null;
@@ -48,4 +44,9 @@ export declare class State {
   resetWd(): void;
 }
 
-export declare const state: State;
+export default {
+  shell: Shell,
+  vars: VarApi,
+  version: string,
+  state: State
+};
