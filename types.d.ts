@@ -38,3 +38,14 @@ export declare interface Shell {
 
 export declare const shell: Shell;
 export declare const vars: VarApi;
+export declare const version: string;
+
+export declare class State {
+  get wd(): string;
+  get wdOverride(): string | null;
+  set wdOverride(value: string | null);
+  get hasOverride(): boolean;
+  resetWd(): void;
+}
+
+export declare const state: State;
