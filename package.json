@@ -18,8 +18,8 @@
     "ncc:build:release": "yarn ncc:clean && yarn ncc:build:release:build:cli && yarn ncc:build:release:build:api && yarn ncc:post-clean",
     "ncc:build:debug": "yarn ncc:clean && yarn ncc:build:debug:build:cli && yarn ncc:build:debug:build:api && yarn ncc:post-clean",
     "prepublishOnly": "yarn ncc:build",
-    "lint": "eslint bin src lib",
-    "lint:fix": "eslint --fix bin src lib"
+    "lint": "eslint --ext .js,.mjs bin src lib",
+    "lint:fix": "eslint --ext .js,.mjs --fix bin src lib"
   },
   "bin": {
     "jse": "bin/jse.js"
