@@ -44,9 +44,13 @@ export declare class State {
   resetWd(): void;
 }
 
-export default interface jse {
+export declare interface Jse {
   shell: Shell,
   vars: VarApi,
   version: string,
   state: State
 }
+
+declare const jse: Jse;
+
+export default jse;
