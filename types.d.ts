@@ -18,7 +18,7 @@ export declare class VarApi {
   set(name: string, value: string | string[]): boolean;
   delete(name: string): boolean;
   find(name: string, options?: { local?: boolean, global?: boolean }): string | string[];
-  search(pattern: string | RegExp): string[];
+  search(pattern: string | RegExp, options?: { local?: boolean, global?: boolean }): string[];
   listSort(name: string): boolean;
   varSort(): void;
 }
