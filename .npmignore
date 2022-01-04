@@ -5,3 +5,4 @@ lib
 src
 *.rbe.json
 *.jse.json
+.nvmrc
