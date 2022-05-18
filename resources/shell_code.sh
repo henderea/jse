@@ -54,9 +54,12 @@ function jse {
     return 1
   fi
   if [[ "$1" == 'reload' ]]; then
-    printf "$(tput dim)Reloading jse shell integration$(tput sgr0)\n"
+    printf "$(tput dim)Reloading jse shell integration$(tput sgr0)\n" >&2
     eval "$(command jse shell)"
   else
+    if [[ "$(command jse shell --revision)" != '!!JSE_SHELL_REVISION!!' ]]; then
+      eval "$(command jse shell)"
+    fi
     command jse $@
     return $?
   fi
