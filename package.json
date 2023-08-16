@@ -7,14 +7,17 @@
   "repository": "git@github.com:henderea/jse.git",
   "author": "Eric Henderson <henderea@gmail.com>",
   "license": "MIT",
+  "exports": {
+    "default": "./dist/api/index.mjs"
+  },
   "scripts": {
     "ncc:build": "yarn ncc:build:release",
     "ncc:clean": "rm -rf dist",
     "ncc:post-clean": "rm -rf dist/**/*.hbs && rm -rf dist/**/locales",
-    "ncc:build:release:build:cli": "my-ncc src/jse.mjs -m -q -o dist/cli",
-    "ncc:build:debug:build:cli": "my-ncc src/jse.mjs -q -o dist/cli",
-    "ncc:build:release:build:api": "my-ncc src/api.mjs -m -q -o dist/api",
-    "ncc:build:debug:build:api": "my-ncc src/api.mjs -q -o dist/api",
+    "ncc:build:release:build:cli": "ncc build src/jse.mjs -m -q -o dist/cli",
+    "ncc:build:debug:build:cli": "ncc build src/jse.mjs -q -o dist/cli",
+    "ncc:build:release:build:api": "ncc build src/api.mjs -m -q -o dist/api",
+    "ncc:build:debug:build:api": "ncc build src/api.mjs -q -o dist/api",
     "ncc:build:release": "yarn ncc:clean && yarn ncc:build:release:build:cli && yarn ncc:build:release:build:api && yarn ncc:post-clean",
     "ncc:build:debug": "yarn ncc:clean && yarn ncc:build:debug:build:cli && yarn ncc:build:debug:build:api && yarn ncc:post-clean",
     "prepublishOnly": "yarn ncc:build",
@@ -22,13 +25,13 @@
     "lint:fix": "eslint --ext .js,.mjs --fix bin src lib"
   },
   "bin": {
-    "jse": "bin/jse.js"
+    "jse": "bin/jse.mjs"
   },
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "@babel/eslint-parser": "^7.16.5",
-    "@henderea/my-ncc": "^1.3.5",
     "@henderea/simple-colors": "^2.0.2",
+    "@vercel/ncc": "^0.36.1",
     "any-shell-escape": "^0.1.1",
     "escalade": "^3.1.1",
     "eslint": "^8.6.0",
