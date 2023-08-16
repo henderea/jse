@@ -25,17 +25,18 @@
     "jse": "bin/jse.mjs"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.7",
-    "@babel/eslint-parser": "^7.16.5",
     "@henderea/simple-colors": "^2.0.2",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
     "@vercel/ncc": "^0.36.1",
     "any-shell-escape": "^0.1.1",
     "escalade": "^3.1.1",
-    "eslint": "^8.6.0",
-    "eslint-config-henderea": "1.0.10",
-    "eslint-plugin-import": "^2.25.4",
+    "eslint": "^8.47.0",
+    "eslint-config-henderea": "1.1.11",
+    "eslint-plugin-import": "^2.28.0",
     "lodash": "^4.17.21",
     "natural-orderby": "^2.0.3",
+    "typescript": "^5.1.6",
     "yargs": "17.3.1"
   },
   "eslintConfig": {
