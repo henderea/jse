@@ -29,7 +29,7 @@
     "jse": "bin/jse.mjs"
   },
   "devDependencies": {
-    "@henderea/simple-colors": "^2.0.5",
+    "@henderea/simple-colors": "^2.0.6",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "@typescript-eslint/parser": "^6.4.0",
     "@vercel/ncc": "^0.36.1",
