@@ -7,6 +7,10 @@
   "repository": "git@github.com:henderea/jse.git",
   "author": "Eric Henderson <henderea@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": ">= 18"
+  },
+  "engineStrict": true,
   "scripts": {
     "ncc:build": "yarn ncc:build:release",
     "ncc:clean": "rm -rf dist",
