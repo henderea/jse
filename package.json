@@ -43,6 +43,11 @@
     "typescript": "^5.2.2",
     "yargs": "17.7.2"
   },
+  "files": [
+    "bin/**/*",
+    "dist/**/*",
+    "resources/**/*"
+  ],
   "eslintConfig": {
     "extends": "henderea",
     "ignorePatterns": "**/*.ts"
