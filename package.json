@@ -46,7 +46,8 @@
   "files": [
     "bin/**/*",
     "dist/**/*",
-    "resources/**/*"
+    "resources/**/*",
+    "types.d.ts"
   ],
   "eslintConfig": {
     "extends": "henderea",
