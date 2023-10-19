@@ -12,6 +12,7 @@
   },
   "engineStrict": true,
   "scripts": {
+    "assets:build": "node scripts/assets.js",
     "ncc:build": "yarn ncc:build:release",
     "ncc:clean": "rm -rf dist",
     "ncc:post-clean": "rm -rf dist/**/*.hbs && rm -rf dist/**/locales",
@@ -19,8 +20,8 @@
     "ncc:build:debug:build:cli": "ncc build src/jse.mjs -q -o dist/cli",
     "ncc:build:release:build:api": "ncc build src/api.mjs -m -q -o dist/api",
     "ncc:build:debug:build:api": "ncc build src/api.mjs -q -o dist/api",
-    "ncc:build:release": "yarn ncc:clean && yarn ncc:build:release:build:cli && yarn ncc:build:release:build:api && yarn ncc:post-clean",
-    "ncc:build:debug": "yarn ncc:clean && yarn ncc:build:debug:build:cli && yarn ncc:build:debug:build:api && yarn ncc:post-clean",
+    "ncc:build:release": "yarn assets:build && yarn ncc:clean && yarn ncc:build:release:build:cli && yarn ncc:build:release:build:api && yarn ncc:post-clean",
+    "ncc:build:debug": "yarn assets:build && yarn ncc:clean && yarn ncc:build:debug:build:cli && yarn ncc:build:debug:build:api && yarn ncc:post-clean",
     "prepublishOnly": "yarn ncc:build",
     "lint": "eslint --ext .js,.mjs bin src lib",
     "lint:fix": "eslint --ext .js,.mjs --fix bin src lib"
@@ -34,7 +35,6 @@
     "@typescript-eslint/parser": "^6.7.3",
     "@vercel/ncc": "^0.38.0",
     "any-shell-escape": "^0.1.1",
-    "escalade": "^3.1.1",
     "eslint": "^8.50.0",
     "eslint-config-henderea": "1.1.16",
     "eslint-plugin-import": "^2.28.1",
@@ -46,7 +46,6 @@
   "files": [
     "bin/**/*",
     "dist/**/*",
-    "resources/**/*",
     "types.d.ts"
   ],
   "eslintConfig": {
