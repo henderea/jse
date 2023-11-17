@@ -12,7 +12,7 @@
   },
   "engineStrict": true,
   "scripts": {
-    "assets:build": "node scripts/assets.js",
+    "assets:build": "build-assets",
     "ncc:build": "yarn ncc:build:release",
     "ncc:clean": "rm -rf dist",
     "ncc:post-clean": "rm -rf dist/**/*.hbs && rm -rf dist/**/locales",
@@ -30,6 +30,7 @@
     "jse": "bin/jse.mjs"
   },
   "devDependencies": {
+    "@henderea/build-assets": "^1.0.1",
     "@henderea/simple-colors": "^2.0.6",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
     "@typescript-eslint/parser": "^6.8.0",

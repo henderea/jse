@@ -1,0 +1,16 @@
+{
+  "assets": [
+    {
+      "type": "version",
+      "packageJsonFile": "package.json"
+    },
+    {
+      "name": "aboutTemplate",
+      "inputFileName": "resources/about-template.txt"
+    },
+    {
+      "name": "shellCode",
+      "inputFileName": "resources/shell_code.sh"
+    }
+  ]
+}
