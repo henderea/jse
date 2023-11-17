@@ -2,7 +2,7 @@
   "assets": [
     {
       "type": "version",
-      "packageJsonFile": "package.json"
+      "packageJson": "package.json"
     },
     {
       "name": "aboutTemplate",

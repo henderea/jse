@@ -39,10 +39,10 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.54.0.tgz#4fab9a2ff7860082c304f750e94acd644cf984cf"
   integrity sha512-ut5V+D+fOoWPgGGNj83GGjnntO39xDy6DWxO0wb7Jp3DcMX0TfIqdzHF85VTQkerdyGmuuMD9AKAo5KiNlf/AQ==
 
-"@henderea/build-assets@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@henderea/build-assets/-/build-assets-1.0.1.tgz#feb592375a22f5553ee74996827a47cedd4bc82e"
-  integrity sha512-yqiOZMHgtS6BHwcyXmO+V/6EwaCottEhLbygppW2fSU/fg26eJGMLD8gWojCMAe39gObIlSdrb7R6D8Lv8/93w==
+"@henderea/build-assets@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@henderea/build-assets/-/build-assets-1.0.2.tgz#0fa492e509c6c393c74fb4490a016b8ffd813940"
+  integrity sha512-t2zvo27ZZN4/rZ1WuEm+pwoarz21yN6U801gxOH0V6mOtFgThtMZf3tuj9onCP5zywUf2/cK4OLgYWvg65FelA==
 
 "@henderea/simple-colors@^2.0.6":
   version "2.0.6"
