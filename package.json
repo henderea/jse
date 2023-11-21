@@ -1,6 +1,6 @@
 {
   "name": "@henderea/jse",
-  "version": "0.7.12",
+  "version": "0.7.13",
   "description": "JavaScript Executor",
   "main": "dist/api/index.mjs",
   "types": "types.d.ts",
