@@ -1,5 +1,5 @@
 function __jse_check {
-  if which jse >/dev/null 2>/dev/null; then
+  if [[ -e "$(whereis -bq jse 2>/dev/null)" ]]; then
     return 0
   elif which nvm >/dev/null 2>/dev/null; then
     if which nvm_find_nvmrc >/dev/null 2>/dev/null; then
@@ -12,7 +12,7 @@ function __jse_check {
       nvm use default >/dev/null 2>/dev/null
       nvm use >/dev/null 2>/dev/null
     fi
-    if which jse >/dev/null 2>/dev/null; then
+    if [[ -e "$(whereis -bq jse 2>/dev/null)" ]]; then
       return 0
     else
       return 1
